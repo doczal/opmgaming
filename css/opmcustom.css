@@ -1,13 +1,139 @@
-.player-profile-1 {
-  background-color: rgb(191, 191, 191);
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../Roboto-Regular.ttf');
 }
 
-.player-pic {
-  border: 2px solid rgb(40, 40, 40);
-  width: 160px;
-  height: 160px;
+@font-face {
+  font-family: 'Play-Regular';
+  src: url('../Play-Regular.ttf');
+}
+
+
+
+body {
+  font-family: Roboto-Regular, sans-serif;
+  /*background-color: rgba(70, 79, 94, 1);*/
+  color: #2A404C;
+}
+
+h4 {
+  font-family: Orbitron, sans-serif;
+  color: rgba(216, 219, 226, 100);
+}
+
+span.highlight {
+  color: #56ab4e;
+}
+
+.btn {
+  font-family: Orbitron, sans-serif;
+  font-weight: 800;
+  padding: 10px 20px;
+  background-color: #2A404C;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+.btn:hover {
+  background-color: #56ab4e;
+  color: #fff;
+}
+
+#navbar {
+  border-bottom: 1px solid #2A404C;
+}
+
+#navbar ul {
+  float:right;
+  margin: 0;
+}
+
+#navbar img {
+  float: left;
+  margin: 0.8rem;
+}
+
+#navbar li {
+  margin: 0 3rem;
+  display: inline;
+  line-height: 6;
+  text-transform: uppercase;
+}
+
+#navbar a {
+  line-height: 1.4;
+  text-decoration: none;
+  color: #2A404C;
+  font-family: Orbitron, sans-serif;
+  font-weight: 800;
+}
+
+.jumbotron {
+  /*background-color: #56ab4e;*/
+  margin-top: 2rem;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+}
+
+.main-image {
+  display: block;
+  width: 75%;
+  margin: 5% auto;
+}
+
+.main-image-text {
+
+  margin: 5% 0;
+  font-family: Orbitron, sans-serif;
+  font-weight: 800;
+  color: #2A404C;
+}
+
+.row {
+  /*border: 2px solid black;*/
+}
+
+.highlight {
+  color: rgba(210, 159, 59, 1);
+  font-weight: bold;
+}
+
+.listleft {
+  display: inline-block;
+  width: 45px;
+}
+
+.container-background {
+  background-color: #373f51;
+  background-color: rgba(41, 45, 54, 1);
+}
+
+.player-profile-1 {
+
+}
+
+img.player-pic {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 160px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  background-color: rgba(210, 159, 59, 1);
+  padding: 6px;
+}
 
+.player-info-1 {
+  padding-left: 10%;
+  height: 100%;
+  margin: auto;
+}
+
+div.player-info-1 > ul {
+  list-style-type: none;
+  line-height: 1.2em;
 }
