@@ -16,17 +16,27 @@ body {
   color: #2A404C;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
   font-family: Orbitron, sans-serif;
   font-weight: 800;
 }
 
-span.highlight {
+.highlight {
   color: #56ab4e;
+  font-weight: bold;
+}
+
+.centered-header {
+  text-align: center;
 }
 
 .bottom-margin {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+
+.top-margin {
+  margin-top: 2rem;
 }
 
 .btn {
@@ -44,6 +54,9 @@ span.highlight {
   color: #fff;
 }
 
+/*------------------------------------------------------*/
+/*Navigation Bar*/
+/*------------------------------------------------------*/
 #navbar {
   border-bottom: 1px solid #2A404C;
 }
@@ -86,6 +99,11 @@ span.highlight {
   height: 100%;
 }
 
+#navbar a.active {
+  background-color: #56ab4e;
+  color: #fff;
+}
+
 @media (max-width: 549px) {
   #navbar img {
     float:none;
@@ -100,6 +118,30 @@ span.highlight {
     line-height: 3;
   }
 }
+
+/*------------------------------------------------------*/
+/*Navigation Bar*/
+/*------------------------------------------------------*/
+
+#teams img {
+  max-width: 360px;
+  width: 100%;
+}
+
+#teams a {
+  display: block;
+  max-width: 360px;
+  opacity: 0.5;
+  margin: auto;
+}
+
+#teams a:hover {
+  opacity: 1;
+}
+
+/*------------------------------------------------------*/
+/*Navigation Bar*/
+/*------------------------------------------------------*/
 
 .jumbotron {
   /*background-color: #56ab4e;*/
@@ -168,14 +210,19 @@ span.highlight {
   /*border: 2px solid black;*/
 }
 
-.highlight {
-  color: rgba(210, 159, 59, 1);
-  font-weight: bold;
+.list-left {
+  float: left;
+  text-align: right;
+  display: inline-block;
+  min-width: 80px;
+  padding-right: 1em;
 }
 
-.listleft {
+.list-right {
+  text-align: left;
   display: inline-block;
-  width: 45px;
+  width: 160px;
+
 }
 
 .container-background {
@@ -183,29 +230,79 @@ span.highlight {
   background-color: rgba(41, 45, 54, 1);
 }
 
-.player-profile-1 {
-
+.player-name {
+  margin-bottom: 1rem;
 }
 
-img.player-pic {
+.player-pic {
   display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 160px;
+  float: right;
+  margin-right: 2rem;
+  width: 90%;
+  max-width: 200px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%;
-  background-color: rgba(210, 159, 59, 1);
+  border-radius: 5%;
+  background-color: #56ab4e;
   padding: 6px;
 }
 
-.player-info-1 {
-  padding-left: 10%;
-  height: 100%;
-  margin: auto;
+@media (max-width: 749px) {
+  .list-left {
+    min-width: 30%;
+  }
+
+  .list-right {
+    width: 46%;
+  }
+
+  .player-pic {
+    float: none;
+    margin: auto;
+  }
+
+  .player-name {
+    text-align: center;
+  }
+
+  div.player-info-1 {
+    margin: auto;
+  }
 }
 
-div.player-info-1 > ul {
+div.player-info-1 {
+  max-width: 400px;
+}
+
+ul.player-info-1 {
   list-style-type: none;
-  line-height: 1.2em;
+  line-height: 1.4rem;
+  padding-left: 1rem;
+}
+
+.player-info-2,
+.player-info-3 {
+  padding: 1rem;
+}
+
+.player-info-4 {
+  padding-right: 15%;
+}
+
+.player-info-4 h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.favorite-champ {
+  width: 38px;
+  border-radius: 50%;
+  border: 2px solid #2A404C;
+}
+
+.favorite-champ-text {
+  float: left;
+  line-height: 1.8rem;
 }
