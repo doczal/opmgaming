@@ -23,6 +23,31 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.article-header {
+  text-align: center;
+  text-transform: none;
+}
+
+.article-main-image {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+.article-text {
+  max-width: 640px;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.even {
+  color: #56ab4e;
+}
+
 .bottom-margin {
   margin-bottom: 3rem;
 }
