@@ -1,17 +1,9 @@
-@font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../Roboto-Regular.ttf');
+a {
+  text-decoration: none;
 }
-
-@font-face {
-  font-family: 'Play-Regular';
-  src: url('../Play-Regular.ttf');
-}
-
-
 
 body {
-  font-family: Roboto-Regular, sans-serif;
+  font-family: "Open Sans", sans-serif;
   /*background-color: rgba(70, 79, 94, 1);*/
   color: #2A404C;
 }
@@ -131,8 +123,13 @@ h1, h2, h3, h4, h5, h6 {
 #teams a {
   display: block;
   max-width: 360px;
-  opacity: 0.5;
+  opacity: 0.7;
   margin: auto;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  -ms-transition:     all 0.3s ease;
+  transition:         all 0.3s ease;
 }
 
 #teams a:hover {
@@ -140,7 +137,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*------------------------------------------------------*/
-/*Navigation Bar*/
+/*Other Stuff*/
 /*------------------------------------------------------*/
 
 .jumbotron {
@@ -247,6 +244,43 @@ h1, h2, h3, h4, h5, h6 {
   padding: 6px;
 }
 
+.player-box {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  #color: #fff;
+}
+
+.player-box:hover > .player-box-caption {
+  background-color: #56ab4e;
+}
+.player-box img {
+  opacity: 0.7;
+  display: block;
+  width: 100%;
+  /*width: 100%;*/
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  -ms-transition:     all 0.3s ease;
+  transition:         all 0.3s ease;
+}
+
+.player-box:hover > img {
+  opacity: 1;
+}
+
+
+.player-box-caption {
+  color: #fff;
+  background-color: #2A404C;
+  padding: 1em;
+
+}
+
 @media (max-width: 749px) {
   .list-left {
     min-width: 30%;
@@ -268,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   div.player-info-1 {
     margin: auto;
   }
+
 }
 
 div.player-info-1 {
@@ -299,7 +334,7 @@ ul.player-info-1 {
 .favorite-champ {
   width: 38px;
   border-radius: 50%;
-  border: 2px solid #2A404C;
+  border: 3px solid #56ab4e;
 }
 
 .favorite-champ-text {
